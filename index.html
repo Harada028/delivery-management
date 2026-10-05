@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>伊藤精肉店 配達管理</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+</head>
+
+<body>
+
+    <h1>伊藤精肉店 配達管理</h1>
+
+    <table>
+
+        <tr>
+            <th>時間</th>
+            <th>配達先</th>
+            <th>金額</th>
+        </tr>
+
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+        <tr>
+            <td><input type="time"></td>
+            <td><input type="text"></td>
+            <td><input type="number" class="amount"></td>
+        </tr>
+    
+
+    </table>
+
+    <button id="calculateButton">計算</button>
+
+    <div id="pdfArea">
+
+        <div id="deliveryList"></div>
+
+        <div id="odometer">
+
+            <p>
+                開始距離
+                <input type="number" id="startodometer">
+                km
+            </p>
+
+            <p>
+                終了距離
+                <input type="number" id="endodometer">
+                km
+            </p>
+
+            <p id="distance">
+                走行距離：0km
+            </p>
+
+            <p id="total">
+                合計：0円
+            </p>
+
+        </div>
+
+    </div>
+
+    <button id="completeButton">完了</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+
+ *{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+/* 配達表 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+th {
+    height: 40px;
+    font-size: 16px;
+}
+
+td {
+    height: 48px;
+}
+
+/* 列の幅 */
+th:nth-child(1),
+td:nth-child(1) {
+    width: 27%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 48%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 25%;
+}
+
+/* 入力欄 */
+input {
+    width: 100%;
+    min-height: 40px;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    background: white;
+}
+
+/* 数字入力 */
+input[type="number"] {
+    text-align: right;
+}
+
+/* 計算・完了ボタン */
+button {
+    width: 100%;
+    min-height: 50px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 走行距離 */
+#odometer {
+    text-align: right;
+    margin-top: 15px;
+}
+
+#odometer p {
+    font-size: 16px;
+}
+
+/* 開始・終了距離 */
+#startodometer,
+#endodometer {
+    width: 100px;
+    min-height: 40px;
+    border: 1px solid #aaa;
+    padding: 5px;
+    text-align: right;
+}
+
+/* 計算結果 */
+#distance,
+#total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* PDFにする部分 */
+#pdfArea {
+    margin-top: 15px;
+}
+
+/* 配達結果 */
+#deliveryList {
+    line-height: 1.8;
+    font-size: 15px;
+}
+
