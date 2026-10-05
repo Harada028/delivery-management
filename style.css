@@ -1,0 +1,25 @@
+th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#odometer {
+    text-align: right;
+}
+
+input {
+    border: none;
+}
+
+#startodometer {
+    border: none;
+    line-height: 30px;
+}
+
+#endodometer {
+    border: none;
+    line-height: 30px;
+}
