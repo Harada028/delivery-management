@@ -12,6 +12,19 @@ let totalDisplay = document.querySelector("#total");
 
 let startodometer = document.querySelector("#startodometer");
 let endodometer = document.querySelector("#endodometer");
+const allInputs = document.querySelectorAll("input");
+
+allInputs.forEach((input, index) => {
+
+    const savedValue =
+        localStorage.getItem("input" + index);
+if (savedValue !== null) {
+    input.value = savedValue;
+}
+input.addEventListener("input", function() {
+    localStorage.setItem("input" + index, input.value);
+});
+});
 
 
 button.addEventListener("click", function() {
@@ -72,20 +85,33 @@ completeButton.addEventListener("click", async function() {
         canvas.toDataURL("image/png");
 
 
-    const { jsPDF } = window.jspdf;
+     const { jsPDF } = window.jspdf;
 
-    let pdf =
+     let pdf =
         new jsPDF();
+     const pageWidth = 190;
+     const pageHeight = 277;
 
+     const imgWidth = canvas.width;
+     const imgHeight = canvas.height;
 
-    pdf.addImage(
-        image,
-        "PNG",
-        10,
-        10,
-        190,
-        0
-    );
+     const ratio = Math.min(
+     pageWidth / imgWidth,
+     pageHeight / imgHeight
+     );
+
+     const pdfWidth = imgWidth * ratio;
+     const pdfHeight = imgHeight * ratio;
+
+     pdf.addImage(
+      image,
+     "PNG",
+     10,
+     10,
+     pdfWidth,
+     pdfHeight
+      );
+      
 
 
     let pdfBlob =
@@ -95,7 +121,9 @@ completeButton.addEventListener("click", async function() {
     let pdfUrl =
         URL.createObjectURL(pdfBlob);
 
-
+     allInputs.forEach((input, index) => {
+     localStorage.removeItem("input" + index);
+     }); 
 
 
 
